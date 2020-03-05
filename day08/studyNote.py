@@ -21,5 +21,11 @@
 # f.close()
 
 ### 追加
+# f = open("models",'a',encoding="utf-8")
+# f.write("琪亚娜")
+# f.close();
 
+# f = open("models",'ab')
+# f.write("琪亚娜".encode('utf-8'))
+# f.close();
 
