@@ -29,3 +29,6 @@
 # f.write("琪亚娜".encode('utf-8'))
 # f.close();
 
+### 读写
+#r+
+open("models",mode="r+",encoding="utf-8")
