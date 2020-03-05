@@ -31,4 +31,45 @@
 
 ### 读写
 #r+
-open("models",mode="r+",encoding="utf-8")
+# f = open("models",mode="r+",encoding="utf-8")
+# print(f.read())
+# f.seek(0)
+# f.write("起来")
+
+#r+
+# f = open("models",mode="r+b",)
+# print(f.read())
+# f.seek(0)
+# f.write("起来".encode("utf-8"))
+
+### 写读
+# w+
+# f = open("models",mode="w+",encoding="utf-8")
+# # f.write("不用")
+# # f.seek(0)
+# # print(f.read())
+# # f.close()
+
+# w+b
+# f = open("models",mode="w+b",)
+# f.write("不用".encode("utf-8"))
+# f.seek(0)
+# print(f.read())
+# f.close()
+
+### 追加 读
+# a+
+f = open("models",mode="a+",encoding="utf-8")
+f.write("仪器")
+f.seek(0)
+print(f.read())
+f.close()
+
+
+# a+b
+f = open("models",mode="a+b",)
+f.write("仪器".encode("utf-8"))
+f.seek(0)
+print(f.read())
+f.close()
+
